@@ -2,25 +2,32 @@ macro_screen_cap_mac: macro_screen_cap_mac{
 compatible = "zmk,behavior-macro";
 label = "macro_screen_cap_mac";
 #binding-cells = <0>;
-bindings = <&sk LCMD>, <&sk LSHFT>, <&kp N4>;
+bindings = <&macro_press &kp LCMD>
+          , <&macro_press &kp LSHFT>
+          , <&macro_tap &kp N4>;
 };
 macro_screen_lock_mac: macro_screen_lock_mac{
 compatible = "zmk,behavior-macro";
 label = "macro_screen_lock_mac";
 #binding-cells = <0>;
-bindings = <&sk LCTRL>, <&sk LCMD>, <&kp Q>;
+bindings = <&macro_press &kp LCTRL>
+          , <&macro_press &kp LCMD>
+          , <&macro_tap &kp Q>;
 };
 macro_screen_lock_win: macro_screen_lock_win{
 compatible = "zmk,behavior-macro";
 label = "macro_screen_lock_win";
 #binding-cells = <0>;
-bindings = <&sk LWIN>, <&kp L>;
+bindings = <&macro_press &kp LWIN>
+          , <&macro_tap &kp L>;
 };
 macro_screen_cap_win: macro_screen_cap_win{
 compatible = "zmk,behavior-macro";
 label = "macro_screen_cap_win";
 #binding-cells = <0>;
-bindings = <&sk LWIN>, <&sk LSHFT>, <&kp S>;
+bindings = <&macro_press &kp LWIN>
+          , <&macro_press &kp LSHFT>
+          , <&macro_tap &kp S>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
